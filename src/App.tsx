@@ -2,7 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import { Grid, GridItem, Show } from "@chakra-ui/react"
-import NavBar from './navbar'
+import NavBar from './components/navbar'
+import GameGrid from './components/GameGrid'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -18,13 +19,15 @@ function App() {
         lg: '250px 1fr'
       }}
     >
-      <GridItem w='100%' area="nav" bg="">
+      <GridItem w='100%' area="nav" bg="black">
         <NavBar />
       </GridItem>
       <Show above="lg">
         <GridItem area="aside" bg="gold" paddingX={5}> aside  </GridItem>
       </Show>
-      <GridItem area="main" bg="green"> Main </GridItem>
+      <GridItem area="main">
+        <GameGrid />
+      </GridItem>
     </Grid>
     // <Button colorScheme='blue'>Button</Button>
   )

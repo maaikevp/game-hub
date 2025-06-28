@@ -1,7 +1,7 @@
 import { Stack, HStack, Text } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
-import logo from './assets/controller3.jpg';
-import ColorModeSwitch from './components/ColorModeSwitch';
+import logo from '../assets/controller.jpg';
+import ColorModeSwitch from './ColorModeSwitch';
 
 // import React from 'react'
 
@@ -9,10 +9,10 @@ import ColorModeSwitch from './components/ColorModeSwitch';
 const NavBar = () => {
     return (
         <>
-            <HStack>
+            <HStack justifyContent='space-between' padding='15px'>
                 <Image src={logo} boxSize='80px' />
+                <Text fontSize='20px' color='yellow'>Navbar</Text>
                 <ColorModeSwitch />
-                <Text fontSize='30px' color='yellow'>Navbar</Text>
             </HStack>
         </>
     )
