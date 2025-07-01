@@ -1,9 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 import { Grid, GridItem, Show } from "@chakra-ui/react"
 import NavBar from './components/navbar'
 import GameGrid from './components/GameGrid'
+import GenreList from "./components/GenreList";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -23,7 +22,9 @@ function App() {
         <NavBar />
       </GridItem>
       <Show above="lg">
-        <GridItem area="aside" bg="grey" paddingX={2}> aside  </GridItem>
+        <GridItem area="aside" width='100px'>
+          <GenreList />
+        </GridItem>
       </Show>
       <GridItem area="main">
         <GameGrid />
