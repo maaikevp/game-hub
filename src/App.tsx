@@ -23,7 +23,7 @@ function App() {
         <NavBar />
       </GridItem>
       <Show above="lg">
-        <GridItem area="aside" bg="gold" paddingX={5}> aside  </GridItem>
+        <GridItem area="aside" bg="grey" paddingX={2}> aside  </GridItem>
       </Show>
       <GridItem area="main">
         <GameGrid />
