@@ -14,9 +14,9 @@ const SearchInput = ({ onSearch }: Props) => {
             event.preventDefault();
             if (ref.current) onSearch(ref.current.value);
         }}>
-            <InputGroup>
+            <InputGroup bg={{ base: "white", _dark: "black" }}>
                 <InputLeftElement children={<BsSearch />} />
-                <Input ref={ref} borderRadius={20} variant='filled' placeholder='Search games' />
+                <Input ref={ref} borderRadius={20} variant='filled' placeholder='Search games' paddingX='10px' />
             </InputGroup>
         </form>
     )
