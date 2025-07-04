@@ -5,8 +5,6 @@ import ColorModeSwitch from './ColorModeSwitch';
 import SearchInput, { Props } from './SearchInput';
 
 
-
-
 const NavBar = ({ onSearch }: Props) => {
     return (
         <>
