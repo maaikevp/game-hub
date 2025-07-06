@@ -1,12 +1,13 @@
 import { Card, CardBody, Heading, HStack, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Game } from '../hooks/useGames'
-import PlatformIconList from './PlatformIconList';
-import CriticScore from './CriticScore';
-import getCroppedImageUrl from '../services/image-url';
+import getCroppedImageUrl from '../services/image-url'
+import CriticScore from './CriticScore'
+import PlatformIconList from './PlatformIconList'
+import Emoji from './Emoji'
 
-export interface Props {
-    game: Game;
+interface Props {
+    game: Game
 }
 
 const GameCard = ({ game }: Props) => {
@@ -14,11 +15,14 @@ const GameCard = ({ game }: Props) => {
         <Card borderRadius={10} overflow='hidden' height='100%'>
             <Image src={getCroppedImageUrl(game.background_image)} />
             <CardBody>
-                <HStack justifyContent={'space-between'} marginBottom={4}>
-                    <PlatformIconList platforms={game.parent_platforms.map(p => p.platform)} />
+                <HStack justifyContent='space-between' marginBottom={3}>
+                    <PlatformIconList platforms={game.parent_platforms?.map(p => p.platform)} />
                     <CriticScore score={game.metacritic} />
                 </HStack>
-                <Heading fontSize='xl' textAlign="left">{game.name}</Heading>
+                <HStack justifyContent='align-bottom' >
+                    <Heading fontSize='2xl' paddingRight={3}>{game.name} </Heading>
+                    <Emoji rating={game.rating_top} />
+                </HStack>
             </CardBody>
         </Card>
     )
