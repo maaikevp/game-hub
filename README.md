@@ -19,5 +19,6 @@ https://game-hub-production-6655.up.railway.app/
 
 Screenshot of the app:
 
-![Game-hub-screenshot](/src/assets/screenshot3.jpg)
+![Game-hub-screenshot](/src/assets/Screenshot3.JPG)
+
 
