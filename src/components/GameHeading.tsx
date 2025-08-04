@@ -10,7 +10,7 @@ const GameHeading = ({ gameQuery }: Props) => {
     const heading = `${gameQuery.platform?.name || ''} ${gameQuery.genre?.name || ''} Games`
 
     return (
-        <Heading as='h1' marginY={5} textAlign="left" paddingLeft={2} >{heading}</Heading>
+        <Heading as='h1' marginY={2} textAlign="left" paddingLeft={2} >{heading}</Heading>
 
     )
 }
