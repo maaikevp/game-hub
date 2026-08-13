@@ -14,7 +14,7 @@ GameHub is a sleek and intuitive app designed for gamers and enthusiasts alike t
 
 Click on this link:
 
-https://game-hub-production-6655.up.railway.app/
+https://game-hub-pearl-iota-22.vercel.app
 
 
 Screenshot of the app:
